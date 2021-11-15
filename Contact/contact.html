@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande de contact - Lyon France</title>
+  <link rel="stylesheet" href="data/css/main.css">
+  <link rel="shortcut icon" href="data/img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CQuicksand:400,500,700%7CMaterial+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="data/css/main.css">
+</head>
+
+<body class="page-contact">
+  <header>
+    <div id="top-header">
+      <a class="logo" href="index.html"><img src="https://www.lyon-france.com/images/01aa563.png" alt="logo-lyon"></a>
+      <nav>
+        <ul>
+          <li><a href="#">Je découvre Lyon</a></li>
+          <li><a href="#">L'Agenda</a></li>
+          <li><a href="#">J'organise mon séjour</a></li>
+        </ul>
+      </nav>
+      <div id="top-header-right">
+        <img id="loupe-search" src="data/img/loupe.png" alt="loupe-search">
+        <select name="langue" id="langue">
+          <option value="en">En</option>
+          <option value="fr" selected>Fr</option>
+        </select>
+        <div class="burger-btn"></div>
+      </div>
+    </div>
+    <div id="bottom-header">
+      <nav>
+        <ul>
+          <li>RÉSERVEZ EN LIGNE</li>
+          <li>
+            <a href="#"><img src="https://www.lyon-france.com//bundles/oltcmainfront/images/menu/menu_resa/picto4.png" alt="visit">Visiter Lyon</a>
+          </li>
+          <li>
+            <a href="#"><img src="https://www.lyon-france.com//bundles/oltcmainfront/images/menu/menu_resa/picto3.png" alt="card">Lyon City Card</a>
+          </li>
+          <li>
+            <a href="#"><img src="https://www.lyon-france.com//bundles/oltcmainfront/images/menu/menu_resa/pictos/vl_picto3_white.png" alt="boat">Activités et Loisirs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <h1 class="specialFont fw-500 lh-1_5">Demande de contact</h1>
+  </section>
+  <section id="start">
+    <div class="width-content">
+      <ol id="breadcrumb">
+        <li><a href="index.html">Accueil</a></li>
+        >
+        <li>Demande de contact</li>
+      </ol>
+      <p class="section-intro">N'hésitez pas à <b>nous contacter</b> pour toute demande d'information.</p>
+    </div>
+  </section>
+  <section class="contact width-content">
+    <p class="indications">* Champs obligatoires</p>
+    <form method="post" class="column" id="contact_form">
+      <label for="lastname">Prénom* :</label>
+      <input type="text" name="lastname" id="lastname">
+      <label for="name">Nom* :</label>
+      <input type="text" name="name" id="name">
+      <label for="number">Number* :</label>
+      <input type="number" name="number" id="number">
+      <label for="email">Email* :</label>
+      <input type="email" name="email" id="email">
+      <label for="msg">Votre message* :</label>
+      <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      <p>En soumettant ce formulaire, vous acceptez les <a href="#">conditions générales d'utilisation d'ONLYLYON Tourisme</a>.</p>
+      <p id="email_error">Invalid Email</p>
+      <p id="number_error">Invalid Number</p>
+      <p id="msg_length_error">The message length is too high (max 200 characters)</p>
+      <p id="name_empty_error">The name is empty</p>
+      <p id="lastname_empty_error">The last name is empty</p>
+      <p id="email_empty_error">The email is empty</p>
+      <p id="number_empty_error">The number is empty</p>
+      <p id="msg_empty_error">The message is empty</p>
+      <input type="submit" value="Soumettre">
+    </form>
+  </section>
+  <section id="first-prefooter">
+    <div class="container row">
+      <div class="left fw-300 row">
+        <div class="img">
+          <img src="https://www.lyon-france.com/bundles/oltcmainfront/images/block_promo_website/block_website_lcc.png" alt="lyon-city-card">
+        </div>
+        <div class="content">
+          <p class="slogan m-0 fw-500 fs-15">Tout Lyon en une seule carte</p>
+          <h4 class="title m-0 fw-500">Lyon City Card</h4>
+          <p class="txt m-0 fs-14 fs-italic lh-1_5">Ce pass indispensable vous permet de profiter pleinement de votre séjour sur 1, 2, 3 ou 4 jours.
+          </p>
+          <a href="#" class="btn btn">En savoir plus</a>
+        </div>
+      </div>
+      <div class="right fw-300 row">
+        <div class="img">
+          <img src="https://www.lyon-france.com/bundles/oltcmainfront/images/block_promo_website/block_website_vl.png" alt="visiter-lyon">
+        </div>
+        <div class="content">
+          <p class="slogan m-0 fw-500 fs-15">Réservez toutes vos</p>
+          <h4 class="title m-0 fw-500">Visiterlyon.com</h4>
+          <p class="txt m-0 fs-14 fs-italic lh-1_5">Découvrez la ville autrement : croisières, excursions, tours gastronomiques, etc.
+          </p>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section id="second-prefooter">
+    <div class="container row">
+      <div class="categorie">
+        <h3 class="title mb-5 fw-500 lh-1_5">Professionnels</h3>
+        <p class="txt fw-500 m-0 ml-5 fs-12 lh-1_5">Vous cherchez une nouvelle destination à programmer ? Vous souhaitez monter un circuit à Lyon pour un client ? Nous sommes là pour vous aider.</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+      <div class="categorie">
+        <h3 class="title mb-5 fw-500 lh-1_5">Espace Presse</h3>
+        <p class="txt fw-500 m-0 ml-5 fs-12 lh-1_5">Vous êtes journalistes ? N’hésitez pas à contacter notre équipe presse, elle vous réservera son meilleur accueil.</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+      <div class="categorie">
+        <h3 class="title mb-5 fw-500 lh-1_5">Tourisme d'affaires</h3>
+        <p class="txt fw-500 m-0 ml-5 fs-12 lh-1_5">Vous cherchez une destination nouvelle pour votre prochain congrès, salon ou événement professionnel ?</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+      <div class="categorie">
+        <h3 class="title mb-5 fw-500 lh-1_5">Groupes</h3>
+        <p class="txt fw-500 m-0 ml-5 fs-12 lh-1_5">Vous voyagez en groupe ? Vous souhaitez un programme personnalisé ? Faites appel à des professionnels experts de leur destination et passionnés par son histoire !</p>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="first-footer row">
+      <div class="left">
+        <nav>
+          <ul class="ls-none fw-500 fs-13">
+            <li>
+              <a href="#">Emplois, stages et appels d'offres</a>
+            </li>
+            <li>
+              <a href="#">Qui sommes-nous ?</a>
+            </li>
+            <li>
+              <a href="#">Crédits et mentions légales</a>
+            </li>
+            <li>
+              <a href="#">Autres langues</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="center">
+        <a href="index.html">
+          <img src="data/img/logo_onlylyon_tourisme_white_fr.png" alt=" logo-lyon">
+        </a>
+      </div>
+      <div class="right">
+        <nav>
+          <ul class="ls-none fw-500 fs-13">
+            <li>
+              <a href="#">CGU et CGV</a>
+            </li>
+            <li>
+              <a href="#">Brochures en téléchargement</a>
+            </li>
+            <li>
+              <a href="contact.html">Demande de contact</a>
+            </li>
+            <li>
+              <a href="#">Actualités ONLYLYON Tourisme et Congrès</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="second-footer fs-12 fs-italic">
+      © 2021 Office du Tourisme et des Congrès de la métropole de Lyon - <a href="#">Paramétrer
+      les cookies</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="data/script/script.js"></script>
+  </footer>
+</body>
+
+</html>

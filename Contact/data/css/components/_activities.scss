@@ -1,0 +1,47 @@
+.activities-container {
+  background-color: $lightGray;
+  padding: $activityPadding 0;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 1170px;
+    @include tablet-landscape {
+      width: 970px;
+    }
+    @include tablet-portrait {
+      width: 750px;
+    }
+    .activity-box {
+      margin: 65px 15px 30px 15px;
+      background-color: white;
+      @include shadow-global;
+      width: $widthActivity;
+      border-radius: 5px;
+      .img {
+        img {
+          margin-top: -65px;
+          margin-left: $activityPadding;
+          margin-right: $activityPadding;
+          height: $widthActivityImg;
+          width: $widthActivityImg;
+        }
+      }
+      .txt {
+        padding: 0 $activityPadding 10px $activityPadding;
+        min-height: $heightContentActivity;
+        h3 {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.5em;
+          margin-bottom: 0;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

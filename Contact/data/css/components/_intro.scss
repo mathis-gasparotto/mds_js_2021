@@ -1,0 +1,37 @@
+#start {
+  padding-bottom: $spacing;
+  .section-title {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    h2 {
+      font-weight: 500;
+    }
+    .subtitle {
+      font-size: 18px;
+      font-family: $secondaryFont;
+      color: $secondaryTextColor;
+      font-weight: 500;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      transform: translateX(-$widthBarIntro/2);
+      width: $widthBarIntro;
+      height: 1px;
+      background-color: $lightGray;
+    }
+  }
+  .date {
+    font-family: $primaryFont;
+    text-align: center;
+    margin-bottom: $spacing;
+  }
+  .section-intro {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.85em;
+    color: black;
+    margin-bottom: 0;
+  }
+}

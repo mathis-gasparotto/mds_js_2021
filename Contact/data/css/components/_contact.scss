@@ -1,0 +1,39 @@
+.contact {
+  margin-top: $spacing;
+  .indications {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: $spacing;
+  }
+  form {
+    width: 50%;
+    margin: auto;
+    label {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      border: none;
+      border-bottom: 1px solid black;
+      margin-bottom: 20px;
+    }
+    textarea {
+      resize: none;
+    }
+    input[type="submit"] {
+      font-family: $secondaryFont;
+      border-radius: 5px;
+      text-transform: uppercase;
+      border: none;
+      padding: 12px 30px;
+      width: min-content;
+      background-color: #999999;
+      color: white;
+      &:hover {
+        @include shadow-btn(#999999);
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.article {
+  font-size: 15px;
+  .link {
+    color: $linkColor;
+    &.dl {
+      margin-bottom: 10px;
+      display: block;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h2.cat-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  h4.cat-title {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  .para {
+    line-height: 1.85em;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+  }
+  .list {
+    padding-left: 50px;
+    margin-bottom: 34px;
+    margin-top: 0;
+    font-weight: 400;
+    list-style: none;
+    font-style: italic;
+    li {
+      margin-bottom: 8px;
+      &::before {
+        content: ">";
+        margin-right: 10px;
+      }
+    }
+  }
+  .article-img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .person {
+    margin: $spacing 0;
+    .left {
+      padding: 0 15px;
+      text-align: center;
+      img {
+        max-width: 175px;
+        padding: 0 30px;
+        border-bottom: 1px solid $lightGray;
+      }
+      .name {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 5px 0 0 0;
+      }
+    }
+    .right {
+      .description {
+        font-weight: 400;
+      }
+    }
+  }
+}

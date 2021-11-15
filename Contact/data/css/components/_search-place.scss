@@ -1,0 +1,124 @@
+.search-place {
+  margin-bottom: $spacing;
+  .search-box,
+  .search-box a,
+  .search-box form select {
+    color: white;
+  }
+  .search-box {
+    background-color: $primaryColor;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 9%;
+    @include tablet-portrait {
+      padding: 0 20px;
+    }
+    .search {
+      form {
+        select {
+          font-family: $primaryFont;
+          background-color: black;
+          width: 120px;
+          border: none;
+          width: 150px;
+          border-bottom: 1px solid white;
+          margin-right: 20px;
+          option {
+            padding: 5px 10px;
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+        .keyword-container {
+          input[type="text"] {
+            background-color: inherit;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 200px;
+          }
+          input[type="submit"] {
+            border: none;
+            border-radius: 2px;
+            margin-left: 5px;
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .categories {
+      .category {
+        text-align: center;
+        padding: 30px;
+        background-color: #313131;
+        margin: 0 1px;
+        img {
+          width: 30px;
+        }
+        p {
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .search-result {
+    .map {
+      iframe {
+        width: $widthMap;
+      }
+    }
+    .cards {
+      padding: 15px;
+      .result {
+        font-family: $primaryFont;
+        font-weight: bold;
+        border-bottom: 1px solid $lightGray;
+        padding-bottom: 2px;
+        margin: 15px;
+      }
+      .container {
+        .line-box {
+          .box {
+            width: 50%;
+            margin: 15px;
+            margin-top: 65px + 30px;
+            border-radius: 5px;
+            @include shadow-global;
+            padding: 15px;
+            .left {
+              margin-top: -65px;
+              img {
+                width: $widthResultImg;
+                border-radius: 3px;
+              }
+              .rate {
+                align-items: center;
+                font-weight: bold;
+                font-family: $primaryFont;
+                justify-content: center;
+                img {
+                  width: 40px;
+                  height: 25px;
+                  margin-right: 10px;
+                }
+              }
+            }
+            .right {
+              margin-left: 15px;
+              h3 {
+                font-weight: 500;
+                font-size: 18px;
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

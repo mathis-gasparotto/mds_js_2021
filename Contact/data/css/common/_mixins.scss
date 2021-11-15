@@ -1,0 +1,55 @@
+// Media Queries
+@mixin desktop {
+  @media screen and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media screen and (max-width: map-get($breakpoints, tablet-landscape)) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media screen and (max-width: map-get($breakpoints, tablet-portrait)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
+
+@mixin breakpoint($px) {
+  @media screen and (max-width: $px) {
+    @content;
+  }
+}
+
+// Others
+@mixin transition-btn {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin shadow-btn($shadow-color) {
+  box-shadow: 0 14px 26px -12px rgba($color: $shadow-color, $alpha: 0.42), 0 4px 23px 0px rgba($color: $shadow-color, $alpha: 0.12), 0 8px 10px -5px rgba($color: $shadow-color, $alpha: 0.2);
+}
+
+@mixin shadow-header-noScroll {
+  box-shadow: 0 0 10px #000;
+}
+
+@mixin shadow-global {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+@mixin custom-shadow($color) {
+  box-shadow: 0 0 20px 2px $color;
+}
+
+@mixin hero-bg($url, $size) {
+  background: url($url) center / $size no-repeat;
+}

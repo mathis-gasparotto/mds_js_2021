@@ -1,0 +1,55 @@
+.hero {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 105px;
+  text-align: center;
+  h1 {
+    font-size: 75px;
+    text-shadow: 0 0 10px #0006;
+    width: 945px;
+  }
+}
+
+.page-index {
+  .hero {
+    height: 625px !important;
+    @include hero-bg("https://slider.lyon-france.com/media/1bc58-EO4A1540_1_2Enhancer.jpg", 2000px);
+  }
+}
+
+.page-parcs {
+  .hero {
+    @include hero-bg( "https://www.lyon-france.com/var/site/storage/images/4/1/3/0/60314-3-fre-FR/St%20Genis%20Laval%20-Hautes-Barolles_%20%C2%A9%20Laurence%20Dani%C3%A8re%20-%20M%C3%A9tropole%20de%20Lyon.jpg", 2000px);
+  }
+}
+
+.page-4-balades {
+  .hero {
+    @include hero-bg( "https://www.lyon-france.com/var/site/storage/images/4/2/9/3/583924-1-fre-FR/balades-saone-lyon.jpg", 2000px);
+  }
+}
+
+.page-contact {
+  .hero {
+    @include hero-bg( "https://www.lyon-france.com/var/site/storage/images/8/0/8/3/293808-2-fre-FR/Saone-saint-paul-Lyon70_tristan-deschamps_1920x500.jpg", 2250px);
+  }
+}
+
+#breadcrumb {
+  font-size: 12px;
+  font-family: $primaryFont;
+  font-style: italic;
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+  padding: 0;
+  li {
+    margin: 0 7px;
+    a {
+      text-decoration: none;
+    }
+  }
+}

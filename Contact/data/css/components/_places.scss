@@ -1,0 +1,50 @@
+.places-container {
+  padding: $placePadding 0;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 1170px;
+    @include tablet-landscape {
+      width: 970px;
+    }
+    @include tablet-portrait {
+      width: 750px;
+    }
+    .place-box {
+      margin: 65px 15px 30px 15px;
+      background-color: $lightGray;
+      @include shadow-global;
+      width: $widthPlace;
+      border-radius: 5px;
+      min-height: $minHeightPlaceBox;
+      .img {
+        img {
+          margin-top: -65px;
+          margin-left: $placePadding;
+          margin-right: $placePadding;
+          height: $widthPlaceImg;
+          width: $widthPlaceImg;
+        }
+      }
+      .txt {
+        padding: 0 $placePadding 30px $placePadding;
+        h3 {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 1.5em;
+          margin-bottom: 0;
+          margin-top: 10px;
+        }
+        p {
+          margin: 0;
+          line-height: 1.5em;
+          font-size: 14px;
+          font-weight: 300;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+body {
+  margin: 0;
+}
+
+@each $fontWeight,
+$weight in $fontWeights {
+  .fw-#{$fontWeight} {
+    font-weight: $weight;
+  }
+}
+
+@each $fontSize,
+$size in $fontSizes {
+  .fs-#{$fontSize} {
+    font-size: $size;
+  }
+}
+
+@each $lineHeight,
+$height in $lineHeights {
+  .lh-#{$lineHeight} {
+    line-height: $height;
+  }
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.fs-italic {
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: white !important;
+  background-color: $primaryColor;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include transition-btn;
+  &:hover {
+    background-color: $primaryColor;
+    @include transition-btn;
+    @include shadow-btn(black);
+  }
+  &:active {
+    background-color: #191919;
+    @include transition-btn;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: $primaryTextColor;
+  text-decoration: none;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+.width-content {
+  max-width: $contentWidth;
+  margin: auto;
+}
+
+.ls-none {
+  list-style: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.read-more {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-family: $primaryFont;
+  &::after {
+    content: ">";
+    margin-left: 5px;
+    font-family: $secondaryFont;
+  }
+}

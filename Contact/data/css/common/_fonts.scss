@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Bernadette Rough";
+  src: url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.eot");
+  src: local("Bernadette Rough"), local("BernadetteRough"), url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.eot?#iefix") format("embedded-opentype"), url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.woff2") format("woff2"), url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.woff") format("woff"), url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.ttf") format("truetype"), url("https://slider.lyon-france.com/assets/fonts/bernadette/hinted-BernadetteRough.svg#BernadetteRough") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $secondaryFont;
+  font-size: 14px;
+  color: $primaryTextColor;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primaryFont;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.6em;
+}
+
+h3 {
+  font-size: 1.825em;
+  margin: 20px 0 10px;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+.light {
+  font-weight: $fontLightWeight;
+}
+
+h1.specialFont {
+  font-family: $specialFont;
+  color: white;
+  filter: drop-shadow(black 0px 2px 2px);
+}

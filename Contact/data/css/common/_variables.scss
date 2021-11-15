@@ -1,0 +1,43 @@
+$breakpoints: ( desktop: 1400px, tablet-landscape: 1100px, tablet-portrait: 1023px, mobile: 767px, );
+//Colors
+$primaryColor: #000000;
+$secondaryColor: #06171c;
+$headerColor: #a4927a;
+$headerColorHover: #b5a187;
+$primaryTextColor: black;
+$secondaryTextColor: #6e6e6e;
+$lightGray: #eee;
+$linkColor: #d7011f;
+$textColorLight: rgba(0, 0, 0, 0.87);
+//Fonts
+$specialFont: "Bernadette Rough",
+sans-serif;
+$primaryFont: "Quicksand",
+"Helvetica",
+"Arial",
+sans-serif;
+$secondaryFont: "Roboto",
+"Helvetica",
+"Arial",
+"sans-serif";
+$fontLightWeight: 300;
+$fontSizes: ( 11: 11px, 12: 12px, 13: 13px, 14: 14px, 15: 15px, 16: 16px, 17: 17px, 18: 18px, );
+$fontWeights: ( 300: 300, 400: 400, 500: 500, );
+$lineHeights: ( 1_5: 1.5em, );
+// Activities
+$widthActivityImg: 192.5px;
+$activityPadding: 35px;
+$widthActivity: $widthActivityImg+2 * $activityPadding;
+$heightContentActivity: 205px;
+// Places
+$widthPlaceImg: 232.5px;
+$placePadding: 15px;
+$widthPlace: $widthPlaceImg+2 * $placePadding;
+$minHeightPlaceBox: 480px;
+// Cards Results
+$widthResultImg: 126px;
+// Others
+$contentWidth: 75%;
+$widthBarIntro: 165px;
+$widthMap: 33vw;
+$spacing: 30px;
