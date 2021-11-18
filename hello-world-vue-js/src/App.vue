@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Mes permiers pas avec Vue.js"/>
+  <HelloWorld msg="Mes permiers pas sur Vue.js"/>
 </template>
 
 <script>
