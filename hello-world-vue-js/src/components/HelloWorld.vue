@@ -2,6 +2,9 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
+  <ul id="name-list">
+  <li v-for="name in names" :key="name.character">{{ name.character }}</li>
+  </ul>
 </template>
 
 <script>
@@ -9,6 +12,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data(){   
+  return {  
+    names: [
+      {character: "John Wick"}, 
+      {character: "Harry Potter"},      
+      {character: "Petter Griffin"},
+      {character: "James Bond"}
+    ]
+  }
   }
 }
 </script>
