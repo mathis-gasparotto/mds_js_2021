@@ -2,9 +2,10 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
-  <ul id="name-list">
+  <ul id="name-list" v-if="seen">
   <li v-for="name in names" :key="name.character">{{ name.character }}</li>
   </ul>
+  <button v-on:click="seen = !seen">Hide/Show</button>
 </template>
 
 <script>
@@ -20,7 +21,8 @@ export default {
       {character: "Harry Potter"},      
       {character: "Petter Griffin"},
       {character: "James Bond"}
-    ]
+    ],
+    seen: true
   }
   }
 }
