@@ -1,15 +1,12 @@
 <template>
   <form v-on:submit.prevent="onSubmit" v-if="step === '1'">
-    <Title :style="{color:colorie}" title="Inscription"/>
+    <Title :style="{color:colorie}" title="Identité de base"/>
     <div class="row">
       <TextInput name="name" label="Prénom : "/>
       <TextInput name="lastname" label="Nom : "/>
     </div>
     <div>
       <DateInput name="birthday" label="Date de naissance : "/>
-    </div>
-    <div>
-      <TextArea name="description" label="Description : " col="30" row="10" />
     </div>
     <div>
       <BtnForm type="submit" text="Suivant" v-on:validation="colorie='green'" v-on:step="step='2'" />
@@ -25,9 +22,9 @@
   </form>
 
   <form v-on:submit.prevent="onSubmit" v-if="step === '2'">
-    <Title :style="{color:colorie}" title="Livraison"/>
+    <Title :style="{color:colorie}" title="Message"/>
     <div>
-      <Select name="profession" label="Profession : " />
+      <TextArea name="message" label="Message : " col="30" row="10" />
     </div>
     <div>
       <BtnForm type="submit" text="Suivant" v-on:validation="colorie='green'" v-on:step="step='3'" />
@@ -44,7 +41,10 @@
   </form>
 
   <form v-on:submit.prevent="onSubmit" v-if="step === '3'">
-    <Title :style="{color:colorie}" title="Paiement"/>
+    <Title :style="{color:colorie}" title="Identité avancée"/>
+    <div>
+      <Select name="profession" label="Profession : " />
+    </div>
     <div>
       <RadioBtn name="sex" label="Sex : " />
     </div>
