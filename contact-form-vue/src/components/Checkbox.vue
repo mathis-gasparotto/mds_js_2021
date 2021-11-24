@@ -1,7 +1,7 @@
 <template>
   <span>{{label}}</span>
   <span v-for="option in options" :key="option">
-    <input type="checkbox" v-bind:id="option.idCheckbox" v-bind:name="name" v-bind:value="option.val">
+    <input type="checkbox" v-bind:id="option.idCheckbox" v-bind:name="option.name" v-bind:value="option.val">
     <label v-bind:for="option.idCheckbox">{{option.text}}</label>
   </span>
 </template>
@@ -22,22 +22,26 @@ export default {
       {
         val: 'Market',
         text: 'Marketing',
-        idCheckbox: 'market'
+        idCheckbox: 'market',
+        name: 'market'
       }, 
       {
         val: 'Dev',
         text: 'Développement',
-        idCheckbox: 'dev'
+        idCheckbox: 'dev',
+        name: 'dev'
       },
       {
         val: 'WebDesign',
         text: 'Web Design',
-        idCheckbox: 'design'
+        idCheckbox: 'design',
+        name: 'design'
       },
       {
         val: 'ProdManag',
         text: 'Product Manager',
-        idCheckbox: 'manag'
+        idCheckbox: 'manag',
+        name: 'manag'
       }
     ]
     

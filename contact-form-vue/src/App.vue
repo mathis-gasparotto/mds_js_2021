@@ -49,7 +49,7 @@
       <RadioBtn name="sex" label="Sex : " />
     </div>
     <div>
-      <Checkbox name="skill" label="Compétence(s) : " />
+      <Checkbox label="Compétence(s) : " />
     </div>
     <div>
       <BtnForm type="submit" text="Valider" v-on:validation="colorie='green'" />

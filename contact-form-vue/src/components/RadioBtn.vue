@@ -30,9 +30,9 @@ export default {
         idRadio: 'fem'
       },
       {
-        val: 'NoBin',
+        val: 'NB',
         text: 'Non Binaire',
-        idRadio: 'nobin'
+        idRadio: 'nb'
       }
     ]
     
