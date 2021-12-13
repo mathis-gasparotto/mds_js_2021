@@ -1,10 +1,11 @@
 <template>
   <div class="app">
-    <h1>Infos sur mon compte Github</h1>
+    <h1>My Github Account</h1>
     <div class="github-owner-infos" >
       <div class="github-owner-info login">Login : {{ githubOwnerLogin }}</div>
       <div class="github-owner-info id">ID : {{ githubOwnerId }}</div>
-      <div class="github-owner-info avatar">Avatar URL : {{ githubOwnerAvatar }}</div>
+      <div class="github-owner-info avatar-url">Avatar URL : {{ githubOwnerAvatar }}</div>
+      <div class="github-owner-info avatar-img">Avatar Image : <img v-bind:src="githubOwnerAvatar" alt="avatar-mathis-gasparotto-github"/></div>
     </div>
     <!-- <div v-for="info in githubOwnerInfos" class="github-owner-infos" :key="info">
       <div class="github-owner-info">Login : {{ info.login }}</div>
@@ -42,7 +43,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  margin-top: 100px;
+.avatar-img img {
+  width: 200px;
 }
 </style>

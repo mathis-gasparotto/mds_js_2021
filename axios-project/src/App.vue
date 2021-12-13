@@ -1,6 +1,11 @@
 <template>
-  <Bitcoin />
-  <Github />
+  <div id ="btc">
+    <Bitcoin />
+  </div>
+  <div id="github">
+    <Github />
+  </div>
+  
 </template>
 
 <script>
@@ -27,5 +32,8 @@ export default {
 }
 body {
   background-color: #14171c;
+}
+#github {
+  margin-top: 100px;
 }
 </style>
