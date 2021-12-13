@@ -16,6 +16,14 @@
       <BtnRefresh txt="Rafraichir" />
     </div>
     <div>
+      <SelectColor name="color" label="Choisissez la couleur du titre : " v-on:blue="colorie='blue'" v-on:white="colorie='white'" v-on:red="colorie='red'" />
+    </div>
+    <div>
+      <BtnColor text="Bleu" v-on:color="colorie='blue'" />
+      <BtnColor text="Blanc" v-on:color="colorie='white'" />
+      <BtnColor text="Rouge" v-on:color="colorie='red'" />
+    </div>
+    <div>
       <FormMsg msg="Envoie réussi" colorie="green" />
       <FormMsg msg="Envoie échoué" colorie="red" />
     </div>
@@ -82,6 +90,8 @@ import BtnForm from './components/BtnForm.vue'
 import FormMsg from './components/FormMsg.vue'
 import BtnStep from './components/BtnStep.vue'
 import BtnRefresh from './components/BtnRefresh.vue'
+import SelectColor from './components/SelectColor.vue'
+import BtnColor from './components/BtnColor.vue'
 
 export default {
   name: 'App',
@@ -96,7 +106,9 @@ export default {
     BtnForm,
     FormMsg,
     BtnStep,
-    BtnRefresh
+    BtnRefresh,
+    SelectColor,
+    BtnColor
   },
   data() {
     return {
