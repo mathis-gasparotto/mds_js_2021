@@ -1,12 +1,12 @@
 <template>
   <div>
-    <button v-on:click="$emit('ajustPrice')">{{text}}</button>
+    <button type="reset" v-on:click="$emit('resetStep')">{{text}}</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ValidBtn',
+  name: 'ResetBtn',
   props: {
     text: String
   }
